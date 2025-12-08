@@ -65,7 +65,7 @@ The script prints `[MISCONFIG]` for each of these checks.
   - Environment variables (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, optionally `AWS_DEFAULT_REGION`)
   - Any other standard AWS credential provider supported by `boto3`
 
-- Output ScreenShot
+## 🖼️ AWS CLI Configuration Screenshot
 ![AWS Configuration](report/screenshots/aws_config.png)
 ---
 
@@ -103,7 +103,7 @@ python aws_security_audit.py
 ```
 Expected output is printed to stdout and indicates `[MISCONFIG]` for each check.
 
-- Output ScreenShot
+## 🖼️ Audit Scan Output
 ![Scan Output](report/screenshots/scan_output.png)
 
 ---
@@ -115,7 +115,7 @@ The project includes pytest-based tests that mock AWS clients. Run them with:
 ```bash
 pytest -q
 ```
-- Output ScreenShot
+## 🖼️ Pytest Results
 ![Tests Output](report/screenshots/pytest.png)
 
 ---
@@ -140,4 +140,12 @@ report/                      # Vulnerability report (PDF)
 
 ---
 
+## 🔒 Security Disclaimer
 
+This tool is intended **only for auditing AWS accounts you own or have permission to assess**.  
+Unauthorized scanning of cloud accounts may violate organizational policy or local laws.
+
+---
+
+📎 Footnote
+<sub> This project was developed as part of the **Gauntlet Assignment** to demonstrate skills in Python, AWS auditing, secure coding practices, and test-driven development. All screenshots, outputs, and configurations shown are from a controlled environment using **read-only AWS permissions** to ensure safety and compliance. The repository is intended strictly for educational and evaluation purposes. </sub>
