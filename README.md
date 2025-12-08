@@ -47,3 +47,13 @@ pip install -r requirements.txt
 ```bash
 aws configure
 ```
+
+### 3. Run the audit:
+```bash
+python aws_security_audit.py
+```
+
+🧪 Running Tests (pytest)
+```bash
+pytest
+```
