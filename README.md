@@ -1,9 +1,13 @@
-﻿# AWS Security Misconfiguration Audit  Gauntlet Assignment
+﻿# 🛡️ AWS Security Misconfiguration Audit – Gauntlet Assignment
 
-Author: Vidhaan Viswas  
-Role Applied: Python Developer & Testing Intern
+> **Author:** Vidhaan Viswas  
+> **Role Applied:** Python Developer & Testing Intern  
 
----
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
+![Status](https://img.shields.io/badge/Status-Read--Only%20Audit-success)
+![AWS](https://img.shields.io/badge/AWS-boto3-orange?logo=amazonaws)
+![Tests](https://img.shields.io/badge/Tests-pytest-informational?logo=pytest)
+
 
 ## Overview
 
