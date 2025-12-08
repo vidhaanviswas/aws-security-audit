@@ -147,5 +147,19 @@ Unauthorized scanning of cloud accounts may violate organizational policy or loc
 
 ---
 
-📎 Footnote
-<sub> This project was developed as part of the **Gauntlet Assignment** to demonstrate skills in Python, AWS auditing, secure coding practices, and test-driven development. All screenshots, outputs, and configurations shown are from a controlled environment using **read-only AWS permissions** to ensure safety and compliance. The repository is intended strictly for educational and evaluation purposes. </sub>
+<details>
+<summary>⚖️ <strong>Legal Disclaimer — Click to Expand</strong></summary>
+
+<br/>
+
+<sub>
+This repository and all associated materials are provided solely for academic and assessment purposes under the Gauntlet Assignment.  
+All AWS interactions were conducted using controlled, read-only permissions to ensure zero modification or disruption of cloud resources.
+
+Unauthorized use of this tool—including security scanning, probing, or auditing of systems without explicit written authorization—may violate organizational policies, contractual obligations, and applicable laws.
+
+The author assumes no responsibility for any misuse, unintended consequences, or unauthorized application of the contents herein.
+</sub>
+
+</details>
+
