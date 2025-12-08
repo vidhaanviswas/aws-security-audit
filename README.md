@@ -9,21 +9,64 @@
 ![Tests](https://img.shields.io/badge/Tests-pytest-informational?logo=pytest)
 
 
-## Overview
+## 📌 Overview
 
-A small, read-only Python tool that scans an AWS account for common misconfigurations in:
-- Amazon S3 (public buckets, logging, versioning)
-- Amazon RDS (public instances, deletion protection, backups)
-- EC2 Security Groups (SSH/MongoDB open to the world, IPv6 ::/0)
+This repository contains a **small, read-only Python tool** that scans an AWS account for common security misconfigurations in:
 
-The checks use the `boto3` SDK and perform only read operations. Configure AWS credentials before running.
+- **Amazon S3**
+  - Publicly accessible buckets  
+  - Buckets without logging  
+  - Buckets without versioning  
+
+- **Amazon RDS**
+  - Publicly accessible DB instances  
+  - Instances without deletion protection  
+  - Instances without automated backups  
+
+- **EC2 Security Groups**
+  - SSH (`22`) open to the world  
+  - MongoDB (`27017`) open to the world  
+  - IPv6 rules open to `::/0`  
+
+All checks are implemented using the **`boto3`** SDK and perform **only read operations**.
 
 ---
 
-## Prerequisites
+## 🧰 Tech Stack
 
-- Python 3.8+ installed
-- AWS credentials configured (via `aws configure` or environment variables)
+- **Language:** Python 3.8+
+- **AWS SDK:** `boto3`
+- **Testing:** `pytest`, `unittest.mock` / `moto` (mocked AWS clients)
+- **Environment:** Any system with Python & AWS credentials configured
+
+---
+
+## ✅ What the Tool Checks
+
+| AWS Service     | Check                                      | Flagged as `[MISCONFIG]` when…                          |
+|-----------------|--------------------------------------------|--------------------------------------------------------|
+| **S3**          | Public access                              | Bucket is publicly accessible                          |
+|                 | Logging                                    | Logging is **disabled**                                |
+|                 | Versioning                                 | Versioning is **disabled**                             |
+| **RDS**         | Public accessibility                       | Instance is publicly accessible                        |
+|                 | Deletion protection                        | Deletion protection is **disabled**                    |
+|                 | Automated backups                          | Backups are **disabled** or retention is too low       |
+| **Security Groups** | SSH exposure (`22/tcp`)                | Rule allows `0.0.0.0/0` or `::/0`                       |
+|                 | MongoDB exposure (`27017/tcp`)             | Rule allows `0.0.0.0/0` or `::/0`                       |
+|                 | IPv6 world access                          | Any rule with `::/0`                                   |
+
+The script prints `OK` or `[MISCONFIG]` for each of these checks.
+
+---
+
+## 🔑 Prerequisites
+
+- **Python**: `3.8+`
+- **AWS account** with **read-only credentials**
+- AWS credentials configured via one of:
+  - `aws configure`
+  - Environment variables (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, optionally `AWS_DEFAULT_REGION`)
+  - Any other standard AWS credential provider supported by `boto3`
 
 ---
 
