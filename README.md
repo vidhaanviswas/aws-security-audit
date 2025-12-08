@@ -134,9 +134,9 @@ report/                      # Output Results (Screen-Shots)
 
 ## Notes
 
-- The tool uses a simple, heuristic-based approach to detect common misconfigurations. It is not exhaustive.
-- Ensure credentials used have **read-only** permissions where possible.
-- If you want the script to use a different region without editing the file, either set `AWS_DEFAULT_REGION` in the environment or modify the `AWS_REGION` variable in the script.
+- The tool uses heuristic checks and is not a full security scanner.
+- Credentials used should have read-only permissions.
+- To use a different region, modify AWS_REGION or set AWS_DEFAULT_REGION in the environment.
 
 ---
 
