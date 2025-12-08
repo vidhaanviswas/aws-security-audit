@@ -53,7 +53,7 @@ All checks are implemented using the **`boto3`** SDK and perform **only read ope
 | **Security Groups** | SSH exposure (`22/tcp`)                | Rule allows `0.0.0.0/0` or `::/0`                       |
 |                 | MongoDB exposure (`27017/tcp`)             | Rule allows `0.0.0.0/0` or `::/0`                       |
 
-The script prints `OK` or `[MISCONFIG]` for each of these checks.
+The script prints `[MISCONFIG]` for each of these checks.
 
 ---
 
@@ -100,6 +100,7 @@ Run the audit:
 ```bash
 python aws_security_audit.py
 ```
+![Scan Output](report/screenshots/scan_output.png)
 
 Expected output is printed to stdout and indicates `OK` or `[MISCONFIG]` for each check.
 
