@@ -77,7 +77,7 @@ aws_security_audit.py        # Main audit script
 requirements.txt             # Dependencies (boto3, pytest)
 README.md                    # This file
 tests/                       # Unit tests (mock-based)
-report/                      # Optional vulnerability report (PDF)
+report/                      # Vulnerability report (PDF)
 ```
 
 ---
@@ -89,3 +89,26 @@ report/                      # Optional vulnerability report (PDF)
 - If you want the script to use a different region without editing the file, either set `AWS_DEFAULT_REGION` in the environment or modify the `AWS_REGION` variable in the script.
 
 ---
+
+## Screenshots
+
+You can include screenshots of the script output or test runs to make results easy to review.
+
+- Suggested locations for screenshots (create the directories if needed):
+  - `report/screenshots/scan_output.png`  screenshot of `python aws_security_audit.py` output
+  - `report/screenshots/tests_output.png`  screenshot of `pytest -q` output
+
+- Quick way to capture textual output if you prefer a plain file instead of an image:
+  - Run the audit and save output to a text file:
+
+```bash
+python aws_security_audit.py > report/scan_output.txt
+```
+
+  - Run tests and save output:
+
+```bash
+pytest -q > report/tests_output.txt
+```
+
+
