@@ -140,13 +140,6 @@ report/                      # Vulnerability report (PDF)
 
 ---
 
-## 🔒 Security Disclaimer
-
-This tool is intended **only for auditing AWS accounts you own or have permission to assess**.  
-Unauthorized scanning of cloud accounts may violate organizational policy or local laws.
-
----
-
 <details>
 <summary>⚖️ <strong>Legal Disclaimer — Click to Expand</strong></summary>
 
@@ -157,7 +150,7 @@ This repository and all associated materials are provided solely for academic an
 All AWS interactions were conducted using controlled, read-only permissions to ensure zero modification or disruption of cloud resources.
 <br>
 Unauthorized use of this tool—including security scanning, probing, or auditing of systems without explicit written authorization—may violate organizational policies, contractual obligations, and applicable laws.
-
+<br>
 The author assumes no responsibility for any misuse, unintended consequences, or unauthorized application of the contents herein.
 </sub>
 
