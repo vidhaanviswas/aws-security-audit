@@ -89,7 +89,3 @@ report/                      # Optional vulnerability report (PDF)
 - If you want the script to use a different region without editing the file, either set `AWS_DEFAULT_REGION` in the environment or modify the `AWS_REGION` variable in the script.
 
 ---
-
-If you'd like, I can also:
-- Convert the script into a CLI with arguments for `--region` and `--output` (JSON/CSV).
-- Add a `Makefile` or PowerShell script to simplify common tasks.
