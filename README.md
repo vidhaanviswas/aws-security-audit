@@ -41,3 +41,7 @@ The script performs **read-only** operations and requires valid AWS credentials 
 ### 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
+
+### 2. Configure AWS credentials:
+```bash
+aws configure
