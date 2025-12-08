@@ -25,8 +25,7 @@ This repository contains a **small, read-only Python tool** that scans an AWS ac
 
 - **EC2 Security Groups**
   - SSH (`22`) open to the world  
-  - MongoDB (`27017`) open to the world  
-  - IPv6 rules open to `::/0`  
+  - MongoDB (`27017`) open to the world 
 
 All checks are implemented using the **`boto3`** SDK and perform **only read operations**.
 
@@ -36,7 +35,7 @@ All checks are implemented using the **`boto3`** SDK and perform **only read ope
 
 - **Language:** Python 3.8+
 - **AWS SDK:** `boto3`
-- **Testing:** `pytest`, `unittest.mock` / `moto` (mocked AWS clients)
+- **Testing:** `pytest`
 - **Environment:** Any system with Python & AWS credentials configured
 
 ---
@@ -53,7 +52,6 @@ All checks are implemented using the **`boto3`** SDK and perform **only read ope
 |                 | Automated backups                          | Backups are **disabled** or retention is too low       |
 | **Security Groups** | SSH exposure (`22/tcp`)                | Rule allows `0.0.0.0/0` or `::/0`                       |
 |                 | MongoDB exposure (`27017/tcp`)             | Rule allows `0.0.0.0/0` or `::/0`                       |
-|                 | IPv6 world access                          | Any rule with `::/0`                                   |
 
 The script prints `OK` or `[MISCONFIG]` for each of these checks.
 
