@@ -57,3 +57,8 @@ python aws_security_audit.py
 ```bash
 pytest
 ```
+
+📝 Optional Report
+### A sample vulnerability report is included under:
+
+- report/vulnerability_report.pdf
