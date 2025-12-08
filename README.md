@@ -1,7 +1,6 @@
 ﻿# 🛡️ AWS Security Misconfiguration Audit – Gauntlet Assignment
 
-> **Author:** Vidhaan Viswas  
-> **Role Applied:** Python Developer & Testing Intern  
+> **Author:** Vidhaan Viswas 
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 ![Status](https://img.shields.io/badge/Status-Read--Only%20Audit-success)
@@ -66,6 +65,8 @@ The script prints `[MISCONFIG]` for each of these checks.
   - Environment variables (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, optionally `AWS_DEFAULT_REGION`)
   - Any other standard AWS credential provider supported by `boto3`
 
+- Output ScreenShot
+![AWS Configuration](report/screenshots/aws_config.png)
 ---
 
 ## Install
@@ -138,26 +139,5 @@ report/                      # Vulnerability report (PDF)
 - If you want the script to use a different region without editing the file, either set `AWS_DEFAULT_REGION` in the environment or modify the `AWS_REGION` variable in the script.
 
 ---
-
-## Screenshots
-
-You can include screenshots of the script output or test runs to make results easy to review.
-
-- Suggested locations for screenshots (create the directories if needed):
-  - `report/screenshots/scan_output.png`  screenshot of `python aws_security_audit.py` output
-  - `report/screenshots/tests_output.png`  screenshot of `pytest -q` output
-
-- Quick way to capture textual output if you prefer a plain file instead of an image:
-  - Run the audit and save output to a text file:
-
-```bash
-python aws_security_audit.py > report/scan_output.txt
-```
-
-  - Run tests and save output:
-
-```bash
-pytest -q > report/tests_output.txt
-```
 
 
