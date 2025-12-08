@@ -1,11 +1,11 @@
-# AWS Security Misconfiguration Audit – Gauntlet Assignment
+﻿# AWS Security Misconfiguration Audit  Gauntlet Assignment
 
 ## Author: Vidhaan Viswas
 ## Role Applied: Python Developer & Testing Intern
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project is a Python-based AWS security audit tool built using the `boto3` SDK.  
 It checks for misconfigurations in:
@@ -18,7 +18,7 @@ The script performs **read-only** operations and requires valid AWS credentials 
 
 ---
 
-## 🚀 Features Implemented
+##  Features Implemented
 
 ### S3 Audit
 - Detect publicly accessible buckets
@@ -36,12 +36,14 @@ The script performs **read-only** operations and requires valid AWS credentials 
 
 ---
 
-## 🔧 How to Run
+##  How to Run
 
 ### 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
 ### 2. Configure AWS credentials:
 ```bash
 aws configure
+```
