@@ -100,9 +100,8 @@ Run the audit:
 ```bash
 python aws_security_audit.py
 ```
+Expected output is printed to stdout and indicates `[MISCONFIG]` for each check.
 ![Scan Output](report/screenshots/scan_output.png)
-
-Expected output is printed to stdout and indicates `OK` or `[MISCONFIG]` for each check.
 
 ---
 
@@ -113,6 +112,7 @@ The project includes pytest-based tests that mock AWS clients. Run them with:
 ```bash
 pytest -q
 ```
+![Tests Output](report/screenshots/pytest.png)
 
 ---
 
