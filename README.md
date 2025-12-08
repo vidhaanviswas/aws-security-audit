@@ -127,7 +127,7 @@ aws_security_audit.py        # Main audit script
 requirements.txt             # Dependencies (boto3, pytest)
 README.md                    # This file
 tests/                       # Unit tests (mock-based)
-report/                      # Vulnerability report (PDF)
+report/                      # Output Results (Screen-Shots)
 ```
 
 ---
@@ -141,7 +141,7 @@ report/                      # Vulnerability report (PDF)
 ---
 
 <details>
-<summary>⚖️ <strong>Legal Disclaimer — Click to Expand</strong></summary>
+<summary>⚖️ <strong>Security Disclaimer</strong></summary>
 
 <br/>
 
