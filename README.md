@@ -155,7 +155,7 @@ Unauthorized scanning of cloud accounts may violate organizational policy or loc
 <sub>
 This repository and all associated materials are provided solely for academic and assessment purposes under the Gauntlet Assignment.  
 All AWS interactions were conducted using controlled, read-only permissions to ensure zero modification or disruption of cloud resources.
-
+<br>
 Unauthorized use of this tool—including security scanning, probing, or auditing of systems without explicit written authorization—may violate organizational policies, contractual obligations, and applicable laws.
 
 The author assumes no responsibility for any misuse, unintended consequences, or unauthorized application of the contents herein.
