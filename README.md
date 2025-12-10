@@ -66,7 +66,7 @@ The script prints `[MISCONFIG]` for each of these checks.
   - Any other standard AWS credential provider supported by `boto3`
 
 ## 🖼️ AWS CLI Configuration Screenshot
-![AWS Configuration](report/screenshots/aws_config.png)
+![AWS Configuration](report/screenshots/aws_config_1.png)
 ---
 
 ## Install
@@ -104,7 +104,7 @@ python aws_security_audit.py
 Expected output is printed to stdout and indicates `[MISCONFIG]` for each check.
 
 ## 🖼️ Audit Scan Output
-![Scan Output](report/screenshots/scan_output.png)
+![Scan Output](report/screenshots/scan_output_1.png)
 
 ---
 
@@ -116,7 +116,7 @@ The project includes pytest-based tests that mock AWS clients. Run them with:
 pytest -q
 ```
 ## 🖼️ Pytest Results
-![Tests Output](report/screenshots/pytest.png)
+![Tests Output](report/screenshots/pytest_1.png)
 
 ---
 
